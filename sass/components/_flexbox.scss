@@ -1,0 +1,17 @@
+.flexbox{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 10rem;
+    flex-wrap: wrap;
+
+    @include respond (tab-port){
+        flex-direction: column;
+    }
+
+    @include respond (phone){
+        flex-direction: column;
+        margin: 0 8rem;
+    }
+   
+}
+

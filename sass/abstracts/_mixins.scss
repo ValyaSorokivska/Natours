@@ -1,0 +1,40 @@
+@mixin absCenter{
+    position: absolute;
+    top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+}
+
+//MEDIA QUERY
+
+@mixin respond($breakkpoint){
+    @if $breakkpoint==phone{
+        @media only screen and (max-width: 37.5em){@content};   //600px
+    }
+    @if $breakkpoint== tab-port{
+        @media  only screen and (max-width: 56.25em){@content};   //900px
+    }
+    @if $breakkpoint==tab-land{
+        @media  only screen and (max-width:75em){@content};   //1200px
+    }
+    @if $breakkpoint == big-desktop{
+        @media  only screen and (min-width: 112.5em){ @content};   //1800px
+    }
+}
+
+//ORDER: Base + typography > general layout + grid/flex > page layout > components
+
+/*
+ @include respond(phone){
+
+}
+@include respond(tab-port){
+   
+}
+@include respond(teb-land){
+   
+}
+@include respond(big-desktop){
+   
+}
+*/

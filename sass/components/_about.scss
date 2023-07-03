@@ -1,0 +1,26 @@
+.text-content__flexbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex: 1;
+    @include respond (tab-port){
+       margin: 0 5rem;
+        }
+}
+
+.composition{
+    flex:1;
+}
+.general{
+    display: flex;
+    margin: 3rem ;
+    @include respond (tab-port){
+        flex-direction: column;
+        margin: 1rem;
+        }
+}
+
+.btn-flex{
+    flex:1;
+}
+
